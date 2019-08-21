@@ -12,4 +12,10 @@ class Vendor extends Model
     public function user(){
         return $this->belongsTo("App\User");
     }
+    public function resorts(){
+        return $this->hasMany('App\Resort');
+    }
+    public function restaurants(){
+        return $this->hasMany('App\Restaurant');
+    }
 }
